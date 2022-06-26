@@ -1,5 +1,5 @@
 \version "2.23.2"
-\include "../config/s02_frbo.ily"
+\include "../config/include.ily"
 
 \header {
   title = "TI SI VJEČAN"
@@ -33,7 +33,7 @@ note = \relative c' {
   \break
 
   %\markMojPon
-    \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+  \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
   \mark \markup { \box \bold A1 }
   R1 | R1 | R1 | R1 |
   \break

@@ -32,11 +32,14 @@ jazzChordsMusic =
   <c f g>-\markup { \cetri }
   %septakordi
   <c e g a>-\markup { \sest }
+  <c es g b>-\markup { \min \sedam }
+  <c es g a>-\markup { \min \sest } 
   <c es g as>-\markup { \min \chordFlat \sest }
   <c e g b>-\markup { \sedam }
   <c e g h>-\markup { \maj \sedam }
   <c es g b>-\markup { \min \sedam }
   <c es ges b>-\markup { \hdim }
+  <c es ges a>-\markup { \dim \sedam }
   <c f g des'>-\markup { \sus \chordFlat \devet }
   <c e g b d'>-\markup { \devet }
   <c f g b>-\markup { \sedam \sus \cetri }

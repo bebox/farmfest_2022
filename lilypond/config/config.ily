@@ -214,6 +214,28 @@ markMojPon = {
   %\mark \default
   %\breathe
   %\noBreak
+  \once \override Score.RehearsalMark.self-alignment-X = #CENTER
+  \once \override Score.RehearsalMark.Y-offset = #0.16
+  %\once \override Staff.BarLine #'extra-spacing-width = #'(-5 . 3)
+  \once \override Staff.BarLine #'extra-spacing-width = #'(0 . 1.2)
+  %\once \override Staff.BarLine #'color = #red
+  %\once \override Staff.BarLine.bar-extent = #'(1.5 . 2.5)
+  \bar ":|."
+  \mark \default
+}
+
+markMojPonRight = {
+  %\override Score.RehearsalMark.extra-spacing-width = #'(0 . 0)
+  %\override Score.RehearsalMark.extra-spacing-height = #'(-inf.0 . +inf.0) 
+  %\once \override Score.RehearsalMark.X-offset = #0.05
+  %\once \override Score.RehearsalMark.extra-spacing-height = #0
+  %\once \override Score.RehearsalMark.outside-staff-priority = #1
+  %\override Score.RehearsalMark.break-align-symbols = #'(breathing-sign)
+  %\override Score.RehearsalMark.break-align-symbols = #'(breathing-sign)
+  %\mark \default
+  %\breathe
+  %\noBreak
+  \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
   \once \override Score.RehearsalMark.Y-offset = #0.16
   %\once \override Staff.BarLine #'extra-spacing-width = #'(-5 . 3)
   \once \override Staff.BarLine #'extra-spacing-width = #'(0 . 1.2)
