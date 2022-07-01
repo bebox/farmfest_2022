@@ -2,7 +2,7 @@
 \include "../config/include.ily"
 
 \header {
-  title = "Psalam 40"
+  title = "PSALAM 40"
   titlex = "Farmfest 2022"
   composer = "Filip Horvat"
   style = ""
