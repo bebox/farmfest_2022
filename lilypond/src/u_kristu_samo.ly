@@ -115,7 +115,7 @@ akordi = \chordmode {
 
 \score {
   <<
-    \new ChordNames { \semiGermanChords \jazzChords \transpose c d \akordi }
+    \new ChordNames {  \jazzChords \transpose c d \akordi }
     \new Staff { \transpose c d \note }
     \addlyrics { \tekst }
     \addlyrics { \tekstB }

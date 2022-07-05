@@ -109,7 +109,7 @@ akordi = \chordmode {
 
 \score {
   <<
-    \new ChordNames { \semiGermanChords \jazzChords \akordi }
+    \new ChordNames {  \jazzChords \akordi }
     \new Staff { \note }
     \addlyrics { \tekst \ref }
   >>

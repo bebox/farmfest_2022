@@ -25,10 +25,12 @@ note = \relative c' {
 %    \set Score.rehearsalMarkFormatter = #format-mark-box-letters
     
     %dio A
-%    \once \override Score.RehearsalMark.break-align-symbols = #'(time-signature)
-    \once \override Score.RehearsalMark.self-alignment-X = #-1.5
-    \once \override Score.RehearsalMark.padding = #1.4
-   \mark \default
+
+  \once \override Score.RehearsalMark.self-alignment-X = #LEFT
+    \once \override Score.RehearsalMark.X-offset = #9.4
+  \once \override Score.RehearsalMark.Y-offset = #3.4
+  %\once \override Staff.BarLine #'extra-spacing-width = #'(0 . 1.2)
+  \mark \default
 %    \repeat volta 2 {
 %    \partial8
   r4 h8 h gis' fis e fis |
@@ -41,9 +43,12 @@ note = \relative c' {
   fis8 gis ~ gis4 r8 fis4 e8 |
   \bar "||"
   
-    \once \override Score.RehearsalMark.break-align-symbols = #'(time-signature)
-    \once \override Score.RehearsalMark.self-alignment-X = #0.5
-    \once \override Score.RehearsalMark.padding = #1
+    \once \override Score.RehearsalMark.self-alignment-X = #CENTER
+  %\once \override Score.RehearsalMark.Y-offset = #0.5
+  %\once \override Staff.BarLine #'extra-spacing-width = #'(-5 . 3)
+  \once \override Staff.BarLine #'extra-spacing-width = #'(0 . 1.2)
+  %\once \override Staff.BarLine #'color = #red
+  %\once \override Staff.BarLine.bar-extent = #'(1.5 . 2.5)
   \mark \default
   r4 r8 e8 gis4 h8 h |
   e,4 r8 e8 a8. gis16 ~ gis8 fis |
@@ -55,10 +60,7 @@ note = \relative c' {
   fis8 fis e8 fis ~ fis4 r4 |
   \bar "||"
   
-      \once \override Score.RehearsalMark.break-align-symbols = #'(time-signature)
-    \once \override Score.RehearsalMark.self-alignment-X = #0.5
-    \once \override Score.RehearsalMark.padding = #1
-  \mark \default
+   \markMojCenter
   h4. gis8 ~ gis4 r4 |
   fis16 fis8 fis16 ~ fis16 gis8 a16 ~ a16 gis8 fis16 ~ fis8  e8 |
   h'4. gis8 ~ gis4 r4 |
@@ -117,7 +119,7 @@ akordi = \chordmode {
 
 \score {
   <<
-    \new ChordNames { \semiGermanChords \jazzChords \akordi }
+    \new ChordNames {  \jazzChords \akordi }
     \new Staff { \note }
     \addlyrics { \tekst \ref }
     \addlyrics { \tekstDva }

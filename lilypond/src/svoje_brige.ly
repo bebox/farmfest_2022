@@ -107,7 +107,7 @@ akordi = \chordmode {
 
 \score {
   <<
-    \new ChordNames { \semiGermanChords \jazzChords  \shiftDurations #-1 #0  \akordi }
+    \new ChordNames {  \jazzChords  \shiftDurations #-1 #0  \akordi }
     \new Staff {  \shiftDurations #-1 #0  \note }
     \addlyrics { \tekst }
         \addlyrics { \tekstB }

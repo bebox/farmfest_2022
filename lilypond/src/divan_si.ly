@@ -45,7 +45,13 @@ note = \relative c' {
   d2 r2 |
   r1 |
   
-  \markMojPon
+  \once \override Score.RehearsalMark.X-offset = #0.00
+    \once \override Score.RehearsalMark.Y-offset = #1.6
+
+  \once \override Score.RehearsalMark.self-alignment-X = #CENTER
+  \once \override Staff.BarLine #'extra-spacing-width = #'(0 . 1.2)
+  \bar ".|:"
+  \mark \default
   fis'2. a,8 e' ~ |
   e1 |
   fis2. d8 h8 ~ |
@@ -135,7 +141,7 @@ akordi = \chordmode {
 
 \score {
   <<
-    \new ChordNames { \semiGermanChords \jazzChords \transpose d a \akordi }
+    \new ChordNames {  \jazzChords \transpose d a \akordi }
     \new Staff { \transpose d a \note }
     \addlyrics { \tekst \ref }
     \addlyrics { \tekstB \refB }

@@ -114,7 +114,7 @@ h1:m | g | d | a |
 
 \score {
   <<
-    \new ChordNames { \semiGermanChords \jazzChords \akordi }
+    \new ChordNames {  \jazzChords \akordi }
     \new Staff { \note }
     \addlyrics { \tekst }
     \addlyrics { \ref }

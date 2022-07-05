@@ -33,7 +33,14 @@ note = \relative c' {
   b'8 as f es ~ es8 des r4 |
   \break
   
-  \markMoj
+    \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+  \once \override Score.RehearsalMark.Y-offset = #4.5
+  %\once \override Staff.BarLine #'extra-spacing-width = #'(-5 . 3)
+  \once \override Staff.BarLine #'extra-spacing-width = #'(0 . 1.2)
+  %\once \override Staff.BarLine #'color = #red
+  %\once \override Staff.BarLine.bar-extent = #'(1.5 . 2.5)
+  \bar "||"
+  \mark \default
   \tuplet 3/2 {as'8 as as} \tuplet 3/2 {as8 as as} b8 f r4 |
   \tuplet 3/2 {es8 es es} \tuplet 3/2 {es8 es des } es f16 es r8 des |
   ges16 f8 es16 ~ es des8 ges16 ~ ges f8 es16 ~ es des8. |
@@ -86,7 +93,7 @@ akordi = \chordmode {
 \score {
   <<
     \transpose des es
-    \new ChordNames { \semiGermanChords \jazzChords \akordi }
+    \new ChordNames {  \jazzChords \akordi }
     %\new Staff { \note }
     \transpose des es { \note }
     \addlyrics { \tekstA }
