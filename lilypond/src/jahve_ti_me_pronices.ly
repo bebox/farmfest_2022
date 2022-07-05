@@ -119,7 +119,7 @@ akordi = \chordmode {
 
 \score {
   <<
-    \new ChordNames { \semiGermanChords \jazzChords \akordi }
+    \new ChordNames { \jazzChords \akordi }
     \new Staff { \note }
     \addlyrics { \tekst \ref }
   >>
@@ -131,11 +131,16 @@ akordi = \chordmode {
   \smaller \italic Leadsheet: \hspace #1
   \huge {
     \rounded-box {
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) 1 \italic \teeny { intro } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) 2 \italic \teeny { verse } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { 3 \teeny \italic { chorus } } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) 2 \italic \teeny { verse } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { 3 \teeny \italic { chorus } } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A \italic \teeny { verse } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { B \teeny \italic { chorus } } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A1 \italic \teeny { verse } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { B1 \teeny \italic { chorus } } }
+    }
+  }
+  "x2,  "
+    \huge {
+    \rounded-box {
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A \italic \teeny { [1-4] ending } }
     }
   }
 }

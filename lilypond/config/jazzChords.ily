@@ -10,13 +10,13 @@ chordSharp = \markup { \hspace #0.2 \fontsize #-3 \raise #0.7 "#" }
 %min = \markup { \fontsize #-4 \raise #0.55 \char ##x2013 }
 min = \markup { \fontsize #-2 "m" }
 maj = \markup { \fontsize #-2 "maj" }
-dim = \markup { \hspace #0.08 \fontsize #-7 \raise #1.34 \char ##x00b0 }
+dim = \markup { \hspace #0.06 \fontsize #-7 \raise #1.2 \char ##x00b0 }
 hdim = \markup { \fontsize #-7 \raise #1.2 \char ##x00d8 }
 aug = \markup { \fontsize #-7 \raise #1.2 "+" }
 dva = \markup { \fontsize #-4 \raise #0.8 "2" }
 cetri = \markup { \fontsize #-4 \raise #0.8 "4" }
 sest = \markup { \fontsize #-4 \raise #0.8 "6" }
-sedam = \markup { \fontsize #-4 \raise #0.8 "7" }
+sedam = \markup { \hspace #0.1 \fontsize #-4 \raise #0.8 "7" }
 devet = \markup { \fontsize #-4 \raise #0.8 "9" }
 trinaest = \markup { \fontsize #-4 \raise #0.8 "13" }
 jedanaest = \markup { \fontsize #-4 \raise #0.8 "11" }
@@ -39,7 +39,7 @@ jazzChordsMusic =
   <c e g h>-\markup { \maj \sedam }
   <c es g b>-\markup { \min \sedam }
   <c es ges b>-\markup { \hdim }
-  <c es ges a>-\markup { \dim \sedam }
+  <c es ges heses>-\markup { \dim \sedam }
   <c f g des'>-\markup { \sus \chordFlat \devet }
   <c e g b d'>-\markup { \devet }
   <c f g b>-\markup { \sedam \sus \cetri }
