@@ -58,9 +58,9 @@ You are the same, You are the same, You are the same.
 }
 
 ref = \lyricmode {
-God my Fa -- ther on -- ly in your hand
+God __ my Fa -- ther __ on -- ly in your hand
 You are the same, You are the One,
-I'm co -- ming back to You.
+I'm co -- ming back to You. __
 }
 
 akordi = \chordmode {
@@ -101,9 +101,9 @@ akordi = \chordmode {
   \huge {
     \rounded-box {
       \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A \italic \teeny { intro } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) B \italic \teeny { verse } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) B \italic \teeny { verse } }
       \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { C \teeny \italic { chorus } } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) B \italic \teeny { verse } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) B \italic \teeny { verse } }
       \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { C \teeny \italic { chorus } } }
       \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \italic \teeny { [12-14] inst. } }
       \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \italic \teeny { [12-14] choir 2x} }

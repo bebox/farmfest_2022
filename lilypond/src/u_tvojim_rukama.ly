@@ -1,5 +1,5 @@
 \version "2.23.2"
-\include "../config/s02_frbo.ily"
+\include "../config/include.ily"
 
 \header {
   title = "U TVOJIM RUKAMA"
@@ -28,7 +28,7 @@ note = \relative c'' {
   R1. |
   \break
 
-  \markMojPon
+  \markMojPonRight
   r4 h8 h4 cis8 a4. cis4 fis,8 |
   a8( gis) gis gis gis gis cis4 h8 a4. |
   r4 cis8 h4 cis8 a8( gis4) cis8 cis h |
@@ -39,7 +39,7 @@ note = \relative c'' {
   a8( gis4) cis8 cis cis d2. |
   \break
 
-  \markMoj
+  \markMojCenter
   \bar ".|:"
   e2. ~ e4. ~ e4 d8 |
   d4 cis8 ~ cis4. ~ cis4. cis8 h cis |
@@ -60,7 +60,7 @@ Ti i -- sti si, i -- sti si da, i -- sti si da. __
 ref = \lyricmode {
 Bog __ moj o -- tac. __ U tvo -- jim ru -- ka -- ma.
 I -- sti si da, je -- di -- ni Bog.
-Sad te -- bi se vra -- ćam ja.
+Sad te -- bi se vra -- ćam ja. __
 }
 
 akordi = \chordmode {
@@ -100,14 +100,14 @@ akordi = \chordmode {
   \smaller \italic Leadsheet: \hspace #1
   \huge {
     \rounded-box {
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) 1 \italic \teeny { intro } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) 2 \italic \teeny { verse } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { 3 \teeny \italic { chorus } } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) 2 \italic \teeny { verse } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { 3 \teeny \italic { chorus } } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \italic \teeny { [12-14] instr. } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A \italic \teeny { intro } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) B \italic \teeny { ver. } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { C \teeny \italic { chorus } } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) B \italic \teeny { ver. } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { C \teeny \italic { chorus } } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \italic \teeny { [12-14] inst. } }
       \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \italic \teeny { [12-14] choir 2x} }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { 3 \teeny \italic { chorus (canon) } } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { C \teeny \italic { chorus (canon) } } }
     }
   }
 }

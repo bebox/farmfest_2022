@@ -1,5 +1,5 @@
 \version "2.23.9"
-\include "../config/s02_frbo.ily"
+\include "../config/include.ily"
 
 \header {
   title = "U KRISTU SAMO"
@@ -130,18 +130,18 @@ akordi = \chordmode {
   \smaller \italic Leadsheet: \hspace #1
   \huge {
     \rounded-box {
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) 1 \italic \teeny { } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) 2 \italic \teeny { v.1. } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { 3 \teeny \italic { chorus } } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) 1 \italic \teeny { } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) 2 \italic \teeny { v.2. } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { 3 \teeny \italic { chorus } } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) 1 \italic \teeny { } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) 2 \italic \teeny { v.3. } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { 3 \teeny \italic { chorus } } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) 1 \italic \teeny { } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) 2 \italic \teeny { v.4. } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { 3 \teeny \italic { chorus 2x} } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A \italic \teeny { } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) B \italic \teeny { v.1. } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { C \teeny \italic { chorus } } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A \italic \teeny { } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) B \italic \teeny { v.2. } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { C \teeny \italic { chorus } } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A \italic \teeny { } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) B \italic \teeny { v.3. } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { C \teeny \italic { chorus } } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A \italic \teeny { } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) B \italic \teeny { v.4. } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { C \teeny \italic { chorus} } }
     }
   }
 }

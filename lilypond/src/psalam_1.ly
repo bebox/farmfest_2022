@@ -1,5 +1,5 @@
 \version "2.23.9"
-\include "../config/s02_frbo.ily"
+\include "../config/include.ily"
 
 \header {
   title = "PSALAM 1"
@@ -27,7 +27,7 @@ note = \relative c' {
   r1 |
   r1 |
   
-  \markMojPon \break
+  \markMojPonRight \break
   g'8. h16 ~ h8 a8 ~ a8 \phrasingSlurDashed g8\( g8\) g8 |
   a8 g16 a16 ~ a16 g8 a16 ~ a16 h8 h16 ~ h4 |
   g8. h16 ~ h8 a8 ~ a8 g4 g8 |
@@ -95,13 +95,13 @@ a2:m d | g1 |
   \smaller \italic Leadsheet: \hspace #2
   \huge {
     \rounded-box {
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) 1 \italic \teeny { intro } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) 2 \italic \teeny { verse 1. } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { 3 \teeny \italic { chorus 2x } } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) 1 \italic \teeny { intro } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) 2 \italic \teeny { verse 2. } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { 3 \teeny \italic { chorus 2x } } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) 1 \italic \teeny { outro } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A \italic \teeny { intro } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) B \italic \teeny { verse 1. } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { C \teeny \italic { chorus 2x } } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A \italic \teeny { intro } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) B \italic \teeny { verse 2. } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { C \teeny \italic { chorus 2x } } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A \italic \teeny { outro } }
     }
   }
 }

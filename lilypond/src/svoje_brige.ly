@@ -1,5 +1,5 @@
 \version "2.23.9"
-\include "../config/s02_frbo.ily"
+\include "../config/include.ily"
 
 \header {
   title = "SVOJE BRIGE SAD ODLOŽI"
@@ -23,7 +23,8 @@ note = \relative c' {
   \time 2/2
 
 		%kitica1
-		\mark \default %verse
+		%\mark \default %verse
+		\markMoj
 		\partial 8
 		d16 e | fis8 d16 e ~ e8 cis16 d ~ d8 h16 ( a ~ a8 ) 
 		d16 e |fis8 d16 e ~ e8 cis16 h ~ h4 r8 
@@ -124,15 +125,15 @@ akordi = \chordmode {
   \smaller \italic Leadsheet: \hspace #2
   \huge {
     \rounded-box {
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) 2 \italic \teeny { intro } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) 1 \italic \teeny { v.1. } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { 2 \teeny \italic { chorus } } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) 1 \italic \teeny { v.2. } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { 2 \teeny \italic { chorus } } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) 1 \italic \teeny { v.3. } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { 2 \teeny \italic { chorus } } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) 1 \italic \teeny { v.4. } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { 2 \teeny \italic { chorus 2x } } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) B \italic \teeny { intro } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A \italic \teeny { v.1. } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { B \teeny \italic { chorus } } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A \italic \teeny { v.2. } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { B \teeny \italic { chorus } } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A \italic \teeny { v.3. } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { B \teeny \italic { chorus } } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A \italic \teeny { v.4. } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { B \teeny \italic { chorus 2x } } }
     }
   }
 }

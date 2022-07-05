@@ -1,5 +1,5 @@
 \version "2.23.9"
-\include "../config/s02_frbo.ily"
+\include "../config/include.ily"
 
 \header {
   title = "DUBINE"
@@ -41,7 +41,10 @@ note = \relative c' {
   d8 e8 ~ e8. \parenthesize d16 fis4 a4 |
   h,2 ~ h8. h16 cis8. d16 ~ |
   
-  \markMoj
+    \once \override Score.RehearsalMark.self-alignment-X = #CENTER
+  \once \override Score.RehearsalMark.Y-offset = #0.5
+  \once \override Staff.BarLine #'extra-spacing-width = #'(0 . 1.5)
+  \mark \default
   d8 d8 ~ d2 r4 |
   r1 |
   r1 |
@@ -124,16 +127,16 @@ h1:m | g | d | a |
   \smaller \italic Leadsheet: \hspace #1
   \huge {
     \rounded-box {
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) 3 \italic \teeny { intro } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) 1 \italic \teeny { verse 1. } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) 2 \italic \teeny { bridge } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) 3 }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { 4 \teeny \italic { chorus } } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) 1 \italic \teeny { verse 2. } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) 2 \italic \teeny { bridge } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) 3 }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { 4 \teeny \italic { chorus 2x } } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) 3 \italic \teeny { outro } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) C \italic \teeny { intro } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A \italic \teeny { verse 1. } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) B \italic \teeny { bridge } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) C }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { D \teeny \italic { chorus } } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A \italic \teeny { verse 2. } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) B \italic \teeny { bridge } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) C }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { D \teeny \italic { chorus 2x } } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) C }
     }
   }
 }

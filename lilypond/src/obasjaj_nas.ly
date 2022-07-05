@@ -1,5 +1,5 @@
 \version "2.23.9"
-\include "../config/s02_frbo.ily"
+\include "../config/include.ily"
 
 \header {
   title = "OBASJAJ NAS"
@@ -20,7 +20,7 @@
 
 note = \relative c' {
   	\key g \major
-	\markMojPoc
+	\markMoj
 	g'8 g g g ~ g g fis fis ~ |
 	fis8 e4. r2 |
     	d8 d d d ~ d e4 d8 ~ |
@@ -104,11 +104,11 @@ akordi = \chordmode {
   \smaller \italic Leadsheet: \hspace #2
   \huge {
     \rounded-box {
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) 2 \italic \teeny { intro } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) 1 \italic \teeny { verse } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { 2 \teeny \italic { chorus 2x } } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) 1 \italic \teeny { verse } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { 2 \teeny \italic { chorus 2x } } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) B \italic \teeny { intro } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A \italic \teeny { verse } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { B \teeny \italic { chorus 2x } } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A \italic \teeny { verse } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { B \teeny \italic { chorus 2x } } }
     }
   }
 }

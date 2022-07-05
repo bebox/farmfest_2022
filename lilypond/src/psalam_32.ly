@@ -5,7 +5,7 @@
   title = "PSALAM 32"
   titlex = "Farmfest 2022"
   composer = "Maasej Kovačević"
-  style = ""
+  style = "Filip Horvat"
   broj = "1"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
 }
@@ -55,8 +55,8 @@ note = \relative c'' {
   g4 r8 g8 g g g g |
   h4 h8 a ~ a8 g4. |
   \bar "||"
-  \markMoj
-  \bar ".|:"
+  \markMojPonn
+  %\bar ".|:"
   r2 d8 e g4 |
   r2 d8 e g4 |
   r4 r8 d8 d e g4 ~ |
@@ -122,9 +122,9 @@ akordi = \chordmode {
   \huge {
     \rounded-box {
       \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) B \italic \teeny { intro } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) A \italic \teeny { verse } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A \italic \teeny { verse } }
       \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { B \teeny \italic { chorus } } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) A \italic \teeny { verse } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A \italic \teeny { verse } }
       \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { B \teeny \italic { chorus } } }
       \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) B \italic \teeny { outro } }
     }

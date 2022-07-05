@@ -1,5 +1,5 @@
 \version "2.23.9"
-\include "../config/s02_frbo.ily"
+\include "../config/include.ily"
 
 \header {
   title = "ŠTO BLIŽE TEBI"
@@ -24,7 +24,7 @@ note = \relative c' {
   \markMoj
   r1 | r1 | r1 | r1 |
   
-  \markMojPon \break
+  \markMojPonRight \break
   e2 h8 cis dis fis ~ |
   fis8 e4 cis8 dis e4 fis8 ~ |
   fis2 cis8 dis e gis ~ |
@@ -57,7 +57,7 @@ svo -- ju po -- dre -- dim pot -- pu -- no. __
 Na -- dah -- ni me, pro -- či -- sti me, __
 jer če -- žnja sr -- ca mo -- ga je __
 da te ži -- vo -- tom pro -- sla -- vim, __
-bu -- dem ti bli -- že, Bo -- že moj. _
+bu -- dem ti bli -- že, Bo -- že moj. __
 }
 
 ref = \lyricmode {
@@ -88,53 +88,14 @@ e1 |
   \smaller \italic Leadsheet: \hspace #2
   \huge {
     \rounded-box {
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) 1 \italic \teeny { intro } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) 2 \italic \teeny { verse } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { 3 \teeny \italic { chorus } } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) 1 \italic \teeny { intro } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) 2 \italic \teeny { verse } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { 3 \teeny \italic { chorus 2x } } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) 1 \italic \teeny { outro } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A \italic \teeny { intro } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) B \italic \teeny { verse } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { C \teeny \italic { chorus } } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A \italic \teeny { intro } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) B \italic \teeny { verse } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { C \teeny \italic { chorus 2x } } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A \italic \teeny { outro } }
 
     }
   }
 }
-%\markup {
-%  \hspace #11.8
-%  \huge {
-%    \rounded-box {
-%      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) { 4 \teeny \italic { solo } } }
-%      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \teeny \italic modulation:+1/2 }
-%      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { 4 \teeny \italic { chorus 1. } } }
-%      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { 4 \teeny \italic { :23-24 } } }
-%    }
-%  }
-%}
-
-%\markup {
-%\vspace #2
-%\smaller \italic Leadsheet: \hspace #2
-%		\huge {
-%		\rounded-box {
-%			\line { \pad-to-box #'(0 . 0) #'(-0.34 . 2.05) \bold { 1 \teeny \italic chorus } }
-%			\line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) 2 \italic \teeny vers }
-%			\line { \pad-to-box #'(0 . 0) #'(-0.34 . 2.05) \bold { 1 \teeny \italic chorus } }
-%			\line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) 2 \italic \teeny vers }
-%			\line { \pad-to-box #'(0 . 0) #'(-0.34 . 2.05) \bold { 1 \teeny \italic chorus } }
-%			\line { \pad-to-box #'(0 . 0) #'(0 . 2.05) 3 \teeny \italic bridge }
-%			\line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) \bold { 1 \italic \teeny chorus \bold \tiny ×2 } }
-%		}
-%	}
-%}
-
-%{
-convert-ly (GNU LilyPond) 2.18.2  convert-ly: Processing `'...
-Applying conversion: 2.17.97, 2.18.0
-%}
-
-
-%{
-convert-ly (GNU LilyPond) 2.19.59  convert-ly: Processing `'...
-Applying conversion: 2.19.2, 2.19.7, 2.19.11, 2.19.16, 2.19.22,
-2.19.24, 2.19.28, 2.19.29, 2.19.32, 2.19.40, 2.19.46, 2.19.49
-%}

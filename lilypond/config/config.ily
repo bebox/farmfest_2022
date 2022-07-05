@@ -194,6 +194,7 @@ markMojPraz = {
   %\mark \default
   %\breathe
   %\noBreak
+  \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
   \once \override Score.RehearsalMark.Y-offset = #0.16
   %\once \override Staff.BarLine #'extra-spacing-width = #'(-5 . 3)
   \once \override Staff.BarLine #'extra-spacing-width = #'(0 . 1.2)

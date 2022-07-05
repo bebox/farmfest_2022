@@ -56,8 +56,13 @@ noteA = \relative c' {
   r2 r4 e |
   a4 a a gis ~ |
   gis4 a2 a4 |
+  
+  \once \override Score.RehearsalMark.Y-offset = #0.16
+  \once \override Score.RehearsalMark.self-alignment-X = #CENTER
+  \once \override Staff.BarLine #'extra-spacing-width = #'(0 . 1.2)
+  \mark \default
   \bar "||"
-  \markMojCenter
+  
   r2 a4 a ~ |
   a2 h4 cis ~ |
   cis4 a a a ~ |
@@ -246,15 +251,15 @@ akordi = \chordmode {
   \huge {
     \rounded-box {
       \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A - A1 \italic \teeny { intro } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) B \italic \teeny { verse I./II. } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) C \italic \teeny { bridge I./II. } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) B \italic \teeny { verse I./II. } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) C \italic \teeny { bridge I./II. } }
       \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { D \teeny \italic { chorus } } }
     }
   }
   "x2, "
   \huge {
     \rounded-box {
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) E \italic \teeny { outro } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) E \italic \teeny { outro } }
     }
   }
 }

@@ -21,20 +21,31 @@ note = \relative c' {
   \key e \major
   \time 4/4
   
-  r8 h h gis cis h h gis |
-  r8 cis h gis( h) h4 h8 |
-  cis8 cis cis gis cis cis( dis) cis ~ |
-  cis2. r8 cis8 |
-  dis8 dis( e) dis ~ dis2 |
-  r4 dis2. |
-  fis2. dis8 e ~ |
-  e1 |
-  r4 dis4 fis dis |
-  e1 ~ |
-  e1 |
-  \bar "||"
-  
   \markMoj
+  \repeat volta 2 {
+    r8 h h gis cis h h gis |
+    r8 cis h gis( h) h4 h8 |
+    cis8 cis cis gis cis cis( dis) cis ~ |
+    cis2. r8 cis8 |
+    dis8 dis( e) dis ~ dis2 |
+  \alternative {
+    \volta 1 {
+      r4 dis2. |
+      fis2. dis8 e ~ |
+      e1 |
+    }
+    \volta 2 {
+      r4 dis4 fis dis |
+      e1 ~ |
+      e1 |
+    }
+  }
+  }
+  \bar "||" 
+  \break
+
+  
+  \markMojPonn
   r8 e e cis e4 fis8 e ~ |
   e1 |
   r4 e8 h e4 fis8 e ~ |
@@ -43,7 +54,7 @@ note = \relative c' {
   fis8 e ~ e2) r8 gis8 |
   gis8 fis fis e e4 dis |
   dis4 e8 cis ~ cis2 |
-  \bar "|."
+  \bar ":|."
 }
 
 tekst = \lyricmode {
@@ -80,11 +91,10 @@ akordi = \chordmode {
   \smaller \italic Leadsheet: \hspace #1
   \huge {
     \rounded-box {
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) 1 \italic \teeny { intro } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) 2 \italic \teeny { verse } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { 3 \teeny \italic { chorus } } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 0) 2 \italic \teeny { verse } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { 3 \teeny \italic { chorus } } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A \italic \teeny { verse } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { B \teeny \italic { chorus } } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A \italic \teeny { verse } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { B \teeny \italic { chorus } } }
     }
   }
 }
