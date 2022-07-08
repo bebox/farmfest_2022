@@ -3,9 +3,9 @@
 
 \header {
   title = "ZAHVALIMO GOSPODU"
-  titlex = "Farmfest 2021"
-  composer = ""
-  style = ""
+  titlex = "Alternativna verzija"
+  composer = "Benjamin Milgrove"
+  style = "Arr. Ruben Horvat"
   broj = "11"
   tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Preuzeto iz Duhovne Pjesme (297)
   } }

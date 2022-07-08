@@ -3,9 +3,9 @@
 
 \header {
   title = "ŠTO BLIŽE TEBI"
-  titlex = "Farmfest 2021"
+  titlex = "Alternativna verzija"
   composer = "Trish Morgan"
-  style = ""
+  style = "Arr. Ruben Horvat"
   broj = "7"
   tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: "\"Closer to You\" by Trish Morgan, 1991 Kingsway's Thankyou Music" } }
 }
