@@ -3,7 +3,7 @@
 
 \header {
   title = "DUBOKA JE ČEŽNJA"
-  titlex = "Farmfest 2021 (original)"
+  titlex = "Originalna verzija"
   composer = "Trish Morgan, Ray Goudie"
   style = "Ian Townend, Dave Bankhead"
   broj = "3"

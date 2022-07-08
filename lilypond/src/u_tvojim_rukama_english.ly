@@ -3,7 +3,7 @@
 
 \header {
   title = "IN YOUR HAND"
-  titlex = "Farmfest 2021 (original)"
+  titlex = "U Tvojim rukama"
   composer = "Waiting For Steve"
   style = ""
   broj = "10"
@@ -51,14 +51,14 @@ note = \relative c'' {
 
 tekst = \lyricmode {
 You are the same Ye -- ster -- day,
-to -- mo -- row e -- ter -- na -- ly.
+to -- mor -- row e -- ter -- nal -- ly.
 You are the same e -- ven if I turn a -- way.
 You are the same e -- ven if I de -- ny Your name.
 You are the same, You are the same, You are the same.
 }
 
 ref = \lyricmode {
-God __ my Fa -- ther __ on -- ly in your hand
+God __ my Fa -- ther __ on -- ly in your hand.
 You are the same, You are the One,
 I'm co -- ming back to You. __
 }
