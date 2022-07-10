@@ -6,7 +6,7 @@
   titlex = "Farmfest 2021"
   composer = "Filip Horvat"
   style = ""
-  broj = "5"
+  broj = "8"
   tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Zbor Eliam, Čakovec 
   } }
 }

@@ -6,12 +6,12 @@
   titlex = "Alternativna verzija"
   composer = "Bob Fitts"
   style = "Arr. Ruben Horvat"
-  broj = "1"
+  broj = "17"
   tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Praise to the Lord, Integrity's Hosanna! Music } }
 }
 
 \paper {
-  \aFourR
+  \aFourL
   %min-systems-per-page = #7
   %annotate-spacing = ##t
   %system-system-spacing.padding = #3.2

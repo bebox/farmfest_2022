@@ -6,13 +6,13 @@
   titlex = "Farmfest 2021"
   composer = "Sefora Nelson"
   style = ""
-  broj = "6"
+  broj = "13"
   tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: "\"Lege deine sorgen nieder\" von Sefora Nelson"
   } }
 }
 
 \paper {
-  \aFourR
+  \aFourL
   %min-systems-per-page = #7
   %annotate-spacing = ##t
   %system-system-spacing.padding = #3.2

@@ -6,7 +6,7 @@
   titlex = "Alternativna verzija"
   composer = "Benjamin Milgrove"
   style = "Arr. Ruben Horvat"
-  broj = "11"
+  broj = "20"
   tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Preuzeto iz Duhovne Pjesme (297)
   } }
 }
@@ -40,8 +40,8 @@ note = \relative c' {
   g8 g c h a h a16( g8.) |
   \break
   
-  \markMoj
-  \bar ".|:"
+  \markMojCenter
+  \bar ".|:-||"
   d'4. d8 h4 h |
   c4 c8( h ~ h) a16( g ~ g4) |
   h4. c8 d4 c4 |

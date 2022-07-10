@@ -6,12 +6,12 @@
   titlex = "U Tvojim rukama"
   composer = "Waiting For Steve"
   style = ""
-  broj = "10"
+  broj = "19"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: In Your Hand, On a Sunday } }
 }
 
 \paper {
-  \aFourL
+  \aFourR
   %min-systems-per-page = #7
   %annotate-spacing = ##t
   %system-system-spacing.padding = #3.2
@@ -39,7 +39,7 @@ note = \relative c'' {
   \break
 
   \markMojCenter
-  \bar ".|:"
+  \bar ".|:-||"
   e2. ~ e4. ~ e4 d8 |
   d4 cis8 ~ cis4. ~ cis4. ~ cis8 h cis |
   d4. cis a2. |

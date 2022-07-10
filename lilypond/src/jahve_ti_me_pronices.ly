@@ -6,12 +6,12 @@
   titlex = "Psalam 139"
   composer = "Ljubica Zemunović"
   style = "Emil Moguš"
-  broj = "1"
+  broj = "5"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
 }
 
 \paper {
-  \aFourR
+  \aFourL
   %min-systems-per-page = #7
   %annotate-spacing = ##t
   %system-system-spacing.padding = #3.2

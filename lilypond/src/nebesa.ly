@@ -6,12 +6,12 @@
   titlex = "Psalam 19"
   composer = "Franko Cetinić"
   style = ""
-  broj = "1"
+  broj = "6"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
 }
 
 \paper {
-  \aFourR
+  \aFourL
   %min-systems-per-page = #7
   %annotate-spacing = ##t
   %system-system-spacing.padding = #3.2
@@ -44,8 +44,10 @@ note = \relative c' {
   \bar "||" 
   \break
 
-  
-  \markMojPonn
+  \once \override Score.RehearsalMark.self-alignment-X = #CENTER
+  \once \override Staff.BarLine #'extra-spacing-width = #'(0 . 1.2)
+  \bar ".|:-||"
+  \mark \default
   r8 e e cis e4 fis8 e ~ |
   e1 |
   r4 e8 h e4 fis8 e ~ |

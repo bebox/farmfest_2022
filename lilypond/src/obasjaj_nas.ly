@@ -6,7 +6,7 @@
   titlex = "Farmfest 2021"
   composer = "Albert Frey"
   style = ""
-  broj = "4"
+  broj = "7"
   tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: "\"Gnade und Wahrheit\" von Albert Frey, D&D Medien 2001 ©"
   } }
 }

@@ -6,12 +6,12 @@
   titlex = "Alternativna verzija"
   composer = "Trish Morgan"
   style = "Arr. Ruben Horvat"
-  broj = "7"
+  broj = "12"
   tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: "\"Closer to You\" by Trish Morgan, 1991 Kingsway's Thankyou Music" } }
 }
 
 \paper {
-  \aFourL
+  \aFourR
   %min-systems-per-page = #7
   %annotate-spacing = ##t
   %system-system-spacing.padding = #3.2
@@ -25,7 +25,7 @@ note = \relative c' {
   r1 | r1 | r1 | r1 |
   
   \markMojPonRight \break
-  e2 h8 cis dis fis ~ |
+  r2 h8 cis dis fis ~ |
   fis8 e4 cis8 dis e4 fis8 ~ |
   fis2 cis8 dis e gis ~ |
   gis8 fis4 e4 dis8 cis h ~ |
@@ -48,7 +48,6 @@ note = \relative c' {
 }
 
 tekst = \lyricmode {
-\skip2
 Što bli -- že te -- bi, Go -- spo -- de moj, __
 bli -- že, da ču -- jem tvoj ti -- hi glas, __
 da tvo -- ju vo -- lju spo -- zna -- jem, __

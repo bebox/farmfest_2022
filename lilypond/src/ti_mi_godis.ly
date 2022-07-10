@@ -6,7 +6,7 @@
   titlex = "Farmfest 2021"
   composer = "Tobi Wörner"
   style = ""
-  broj = "8"
+  broj = "14"
   tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Du Tust, Von Jesus bewegt } }
 }
 
@@ -78,17 +78,17 @@ tekst = \lyricmode {
 Sr -- ce tra -- ga za sre -- ćom, du -- ša že -- li dom,
 ko -- jim god smje -- rom kre -- nem, dan u -- tro -- šen u -- lu -- do.
 Ja te -- žim za mi -- rom, svud ću tra -- ži -- ti,
-Na kra -- ju tog pu -- ta, __ si Ti.
+na kra -- ju tog pu -- ta, __ si Ti.
 
-Ti da -- ješ ra -- dost, i dom pri -- pre -- maš
-Ti či -- niš sre -- tnim, i kri -- vnju pra -- štaš
-Ti mir svoj da -- ješ, i riječ o -- dr -- žiš
+Ti da -- ješ ra -- dost, i dom pri -- pre -- maš.
+Ti či -- niš sre -- tnim, i kri -- vnju pra -- štaš.
+Ti mir svoj da -- ješ, i riječ o -- dr -- žiš.
 Ti lju -- bav da -- ru -- ješ mi. __
 }
 
 ref = \lyricmode {
-Ti mi __ go -- diš u du -- bi -- ni du -- še
-Ti si __ ka -- o me -- lem ra -- ni Bo -- že
+Ti mi __ go -- diš u du -- bi -- ni du -- še.
+Ti si __ ka -- o me -- lem ra -- ni Bo -- že.
 Ti me tra -- žiš za -- lu -- tam li __ po -- tpu -- no, __
 da po -- tpu -- no. __
 }
@@ -96,9 +96,9 @@ da po -- tpu -- no. __
 tekstDva = \lyricmode {
 \set stanza = #"2. "
 _ Za lju -- ba -- vlju če -- znem, ne -- znam pre -- sta -- ti,
-A -- li ne mo -- gu na -- ći ni -- gdje to što pru -- žaš Ti.
+a -- li ne mo -- gu na -- ći ni -- gdje to što pru -- žaš Ti.
 Moj grijeh tre -- ba o -- prost, sve ću pro -- ba -- ti,
-Na kra -- ju te pri -- če, __ si Ti.
+na kra -- ju te pri -- če, __ si Ti.
 }
 
 akordi = \chordmode {

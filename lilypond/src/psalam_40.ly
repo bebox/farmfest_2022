@@ -6,23 +6,33 @@
   titlex = "Farmfest 2022"
   composer = "Filip Horvat"
   style = ""
-  broj = "1"
-  %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
+  broj = "11"
+  tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Zbor Eliam, Čakovec }} 
 }
 
 \paper {
-  \aFourR
+  \aFourL
   %min-systems-per-page = #7
   %annotate-spacing = ##t
   %system-system-spacing.padding = #3.2
+  page-breaking = #ly:one-page-breaking
+  last-bottom-spacing.minimum-distance = #8
 }
 
 note = \relative c' {
   \key des \major
   \time 4/4
   
-  \markMoj
+  \repeat volta 2 {
   \partial 8 \parenthesize des8 |
+  \once \override Score.RehearsalMark.self-alignment-X = #CENTER
+  \once \override Score.RehearsalMark.Y-offset = #4
+  %\once \override Staff.BarLine #'extra-spacing-width = #'(-5 . 3)
+  \once \override Staff.BarLine #'extra-spacing-width = #'(0 . 1.2)
+  %\once \override Staff.BarLine #'color = #red
+  %\once \override Staff.BarLine.bar-extent = #'(1.5 . 2.5)
+  \bar "||"
+  \mark \default
   f8 ges as des, es es r8 \parenthesize es |
   f8 es des c ~ c b r8 b8 |
   f'8 ges as des, es es r8 es |
@@ -49,7 +59,15 @@ note = \relative c' {
   \tuplet 3/2 {es8 es es} \tuplet 3/2 {es8 es des} es8 f16 es r4 |
   ges16 f8 es16 ~ es des8 ges16 ~ ges f8 es16 ~ es des8. |
   ges16 f8 es16 ~ es des8 ges16 ~ ges8 f16 es ~ es des8. ~ |
-  des2. r4 |
+  \alternative {
+    \volta 1{
+  des2. r8 des8 |
+    }
+    \volta 2 {
+  \repeatTie des2. r4 |
+    }
+  }
+  }
   \bar "|."
 }
 
@@ -68,11 +86,12 @@ tekstA = \lyricmode {
   vo -- lju i riječ tvo -- ju vr -- ši -- ti.
   Svje -- do -- čim za prav -- du tvo -- ju,
   za -- kon tvoj u sr -- cu no -- sim. __
+  On
 }
 
 tekstB = \lyricmode {
   \set stanza = "2."
-  On da mi no -- vu pje -- smu, to pje -- sma je sla -- ve.
+  (On) da mi no -- vu pje -- smu, to pje -- sma je sla -- ve.
   Od stra -- ha svi će sta -- vit u Jah -- vu uz -- da -- nje.
   Ču -- de -- sa mno -- ga tvo -- riš i rav -- na ti ne -- ma.
   _ Že -- lim sve o -- bja -- vit, al' pre -- vi -- še ih __ je.
@@ -80,14 +99,15 @@ tekstB = \lyricmode {
 
 akordi = \chordmode {
   \set chordChanges = ##t
-  ges8
+  s8
   ges2 es:m | b1:m |
   ges2 es:m | b1:m |
   ges2 es:m | b1:m |
   ges2 es:m | b2.:m ges4/as |
   
   des1 | b:m | ges | ges:m |
-  des1 | b:m | ges | ges:m/as | des | 
+  des1 | b:m | ges | ges:m/as | ges:m/as |
+  des1 |
 }
 
 \score {

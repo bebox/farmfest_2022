@@ -6,11 +6,11 @@
   titlex = "Farmfest 2022"
   composer = "Sebastijan Bahat"
   style = "Arr. Ruben Horvat"
-  broj = "10"
+  broj = "15"
 }
 
 \paper {
-  \aFourR
+  \aFourL
   %min-systems-per-page = #7
   %annotate-spacing = ##t
   %system-system-spacing.padding = #3.2

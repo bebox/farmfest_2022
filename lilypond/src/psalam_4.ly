@@ -6,8 +6,8 @@
   titlex = "Farmfest 2022"
   composer = "Petra Horvat"
   style = ""
-  broj = "1"
-  %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
+  broj = "9"
+  tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Zbor Eliam, Čakovec }} 
 }
 
 \paper {
@@ -15,6 +15,8 @@
   %min-systems-per-page = #7
   %annotate-spacing = ##t
   %system-system-spacing.padding = #3.2
+  page-breaking = #ly:one-page-breaking
+  last-bottom-spacing.minimum-distance = #10
 }
 
 note = \relative c' {
@@ -74,24 +76,24 @@ note = \relative c' {
 }
 
 tekstA = \lyricmode {
-  Kad za -- zo -- vem Te __ U -- sli -- ši me __ Bo -- že, prav -- do mo -- ja, 
-  Ti što me u tje -- sko -- bi i -- zba -- vi U -- sli -- ši mol -- bu mo -- ju
-  Kad za mo -- ju
+  Kad za -- zo -- vem te, __ u -- sli -- ši me, __ Bo -- že, prav -- do mo -- ja, 
+  ti što me u tje -- sko -- bi i -- zba -- vi: u -- sli -- ši mol -- bu mo -- ju!
+  Kad za mo -- ju!
   
   \set stanza = "1."
   Si -- no -- vi ljud -- ski, 
   do -- kle će vam sr -- ca tvr -- da o -- sta -- ti? __ 
   Do -- kle će -- te pra -- zne rije -- či vo -- lje -- ti, 
   la -- ži slije -- di -- ti? __ 
-  Znaj -- te da Ja -- hve ču -- de -- sno vo -- di svo -- je sve -- te
-  U -- sli -- ša -- va mo -- li -- tve, kad Ga zo -- vem On ču -- je me
+  Znaj -- te da Ja -- hve ču -- de -- sno vo -- di svo -- je sve -- te;
+  U -- sli -- ša -- va mo -- li -- tve, kad ga zo -- vem on ču -- je me.
 }
 
 tekstB = \lyricmode {
   \repeat unfold 36 ""
   \set stanza = "2."
 Smi -- re -- na sr -- ca pro -- mi -- sli -- te sa -- da i ne grije -- ši -- te. __ 
-Dr -- šči -- te na tren na svo -- me le -- ža -- ju i za -- nje -- mi -- te. __
+Dr -- šći -- te na tren na svo -- me le -- ža -- ju i za -- nije -- mi -- te. __
 Jer mno -- gi ka -- žu: 
   Tko će po -- ka -- za -- ti nam sre -- ću? 
   _ O -- staj -- te pra -- ve -- dni i u Ja -- hvu se u -- zdaj -- te. 
@@ -100,7 +102,8 @@ Jer mno -- gi ka -- žu:
 akordi = \chordmode {
   \set chordChanges = ##t
   s4
-  f1 | c/e | d:m | b |
+  f1 |
+  c1/e | d:m | b |
   a1:m | d:m | g:m | c |
   \set chordChanges = ##f
   c |
@@ -109,7 +112,7 @@ akordi = \chordmode {
   d1:m | c | b | b |
   g1:m | f/a | c | c |
   b1 | c | d:m | d:m |
-  es1 | es | c | c |
+  es1 | es | c | c2 \parenthesize d2 |
   
 }
 

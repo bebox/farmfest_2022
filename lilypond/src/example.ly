@@ -15,6 +15,8 @@
   %min-systems-per-page = #7
   %annotate-spacing = ##t
   %system-system-spacing.padding = #3.2
+  %page-breaking = #ly:one-page-breaking
+  %last-bottom-spacing.minimum-distance = #8
 }
 
 note = \relative c' {

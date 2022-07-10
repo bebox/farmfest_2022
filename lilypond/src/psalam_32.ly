@@ -6,12 +6,12 @@
   titlex = "Farmfest 2022"
   composer = "Maasej Kovačević"
   style = "Filip Horvat"
-  broj = "1"
+  broj = "10"
   %tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Name, Album } }
 }
 
 \paper {
-  \aFourR
+  \aFourL
   %min-systems-per-page = #7
   %annotate-spacing = ##t
   %system-system-spacing.padding = #3.2
@@ -70,26 +70,26 @@ note = \relative c'' {
 
 tekst = \lyricmode {
   Bla -- go o -- nom ko -- me prije -- stup je o -- pro -- šten,
-  Bla -- žen o -- naj ko -- me grijeh je po -- kri -- ven!
-  Bla -- go čo -- vje -- ku kom Ja -- hve ne -- u -- bra -- ja dug
-  i u ko -- ga ne -- ma prije -- va -- re u du -- hu,
-  jer u že -- lji da pre -- šu -- tim ko -- sti su mi klo -- nu -- le
-  od ne -- pre -- sta -- na je -- ca -- nja u prah se pre -- tvo -- ri -- le
-  ru -- ka me tvo -- ja ti -- šti -- la bez pre -- stan -- ka
-  Sna -- ga mi se tro -- ši -- la ko za ljet -- nih vru -- ći -- na.
+  bla -- žen o -- naj ko -- me grijeh je po -- kri -- ven!
+  Bla -- go čo -- vje -- ku kom Ja -- hve ne -- u -- bra -- ja dug,
+  i u ko -- ga ne -- ma prije -- va -- re u du -- hu.
+  Jer u že -- lji da pre -- šu -- tim ko -- sti su mi klo -- nu -- le
+  od ne -- pre -- sta -- na je -- ca -- nja, u prah se pre -- tvo -- ri -- le.
+  Ru -- ka me tvo -- ja ti -- šti -- la bez pre -- stan -- ka,
+  sna -- ga mi se tro -- ši -- la ko za ljet -- nih vru -- ći -- na.
   A -- li tad grijeh svoj, te -- bi sam pri -- zna -- o
-  i kriv -- nju svo -- ju pred to -- bom ja vi -- še ni -- sam skri -- va -- o
+  i kriv -- nju svo -- ju pred to -- bom ja vi -- še ni -- sam skri -- va -- o.
   Re -- ka -- o sam: Pri -- znat ću Ja -- hvi prije -- stup svoj,
   i ti si mi o -- pro -- sti -- o kri -- vnju.
-  Za -- to nek se po -- bo -- žnik sva -- ki u ča -- su ne -- vo -- lje mo -- li
-  ka -- da bu -- ji -- ce na -- va -- le nje -- ga ne -- će sti -- ći
-  ti si u -- to -- čiš -- te mo -- je, da -- ješ mi ra -- dost,
+  Za -- to nek se po -- bo -- žnik sva -- ki u ča -- su ne -- vo -- lje mo -- li.
+  Ka -- da bu -- ji -- ce na -- va -- le, nje -- ga ne -- će sti -- ći.
+  Ti si u -- to -- čiš -- te mo -- je, da -- ješ mi ra -- dost,
   sa -- ču -- vat ćeš me od tje -- sko -- be.
 }
 
 ref = \lyricmode {
-  Ja -- hvi se ra -- duj -- te i kli -- či -- te __ svi pra -- ve -- dni
-  Pje -- vaj -- te Go -- spo -- du svi ko -- ji sr -- ca ste is -- kre -- na. __
+  Ja -- hvi se ra -- duj -- te i kli -- či -- te, __ svi pra -- ve -- dni,
+  pje -- vaj -- te Go -- spo -- du svi ko -- ji sr -- ca ste is -- kre -- na! __
 }
 
 akordi = \chordmode {

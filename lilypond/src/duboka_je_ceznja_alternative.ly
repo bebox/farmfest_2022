@@ -6,15 +6,15 @@
   titlex = "Alternativna verzija"
   composer = "Trish Morgan, Ray Goudie"
   style = "Arr. Ruben Horvat"
-  broj = "1"
+  broj = "4"
   tagline = \markup { \override #'(font-name . "JohnSans White Pro") \override #'(font-size . -3) { Izvorno: Lord we long for you, Kingsway's Thankyou Music } }
 }
 
 \paper {
   \aFourR
-  %min-systems-per-page = #7
   %annotate-spacing = ##t
-  %system-system-spacing.padding = #3.2
+  page-breaking = #ly:one-page-breaking
+  last-bottom-spacing.minimum-distance = #8
 }
 
 note = \relative c'' {
@@ -25,6 +25,9 @@ note = \relative c'' {
   r1 | r1 | r1 | r1 |
   r1 | r1 | r1 | r1 |
   \bar ":|."
+  \break
+  \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+  \mark \markup { \box \bold A1 }
   r1 | r1 | r1 | r1 |
  \bar "||"
  \break
@@ -46,15 +49,9 @@ note = \relative c'' {
   b4 a b c |
   c2.( b8 a) |
   g1 |
-  
+  \break
 
-  \once \override Score.RehearsalMark.self-alignment-X = #CENTER
-  \override Score.RehearsalMark.extra-spacing-width = #'(0 . 0)
-  \once \override Score.RehearsalMark.Y-offset = #0
-  \once \override Staff.BarLine #'extra-spacing-width = #'(0 . 1.2)
-  \bar "||"
-  \mark \default
-  
+  \markMoj
   r1 |
   c2 c4 c |
   c2.( f,4) |
@@ -71,17 +68,16 @@ note = \relative c'' {
   f4 a g f ~ |
   f4 f2. ~ |
   f1 |
-  \bar "||"
-  
-    \once \override Score.RehearsalMark.self-alignment-X = #CENTER
-  %\override Score.RehearsalMark.extra-spacing-width = #'(0 . 0)
-  \once \override Score.RehearsalMark.Y-offset = #0.2
+  \break
+  \once \override Score.RehearsalMark.self-alignment-X = #CENTER
   \once \override Staff.BarLine #'extra-spacing-width = #'(0 . 1.2)
-  \bar "||"
+  \bar ".|:-||"
   \mark \default
-  r1 |
-  r1 |
-  r1 |
+  f2 f4 e8 f ~ |
+  f4 a g f ~ |
+  f4 f2. ~ |
+  f1 |
+  \bar ":|."
   r1 |
   \bar "|."
 }
@@ -96,6 +92,7 @@ ti is -- cije -- liš na -- šu zem -- lju i za -- poč -- neš pro -- bu -- đe
 ref = \lyricmode {
 Is -- cije -- li na -- rod, __ na -- šu zem -- lju! __
 Is -- cije -- li na -- rod! __ O, iz -- lij svoj Duh na nas __ ti! __
+O, iz -- lij svoj Duh na nas __ ti! __
 }
 
 tekstDva = \lyricmode {
@@ -120,8 +117,9 @@ akordi = \chordmode {
   d1:m | c2/e f | b1 | b |
   g1:m | c | b4 \parenthesize es2. |
   s1 |
- 
-  d1:m | c | b1 | b |
+  g1:m | c | es4 \parenthesize b2. |
+  s1 |
+  f1 |
 }
 
 \score {
@@ -139,13 +137,13 @@ akordi = \chordmode {
   \smaller \italic Leadsheet: \hspace #1
   \huge {
     \rounded-box {
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A \italic \teeny { intro } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A - A1 \italic \teeny { intro } }
       \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) B \italic \teeny { verse 1. } }
       \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { C \teeny \italic { chorus } } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) D \italic \teeny { break } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) A1 \italic \teeny { break } }
       \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) B \italic \teeny { verse 2. } }
       \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { C \teeny \italic { chorus x2 } } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { C \teeny \italic { [41 - 44] x2, F-dur } } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) D \italic \teeny { outro } }
     }
   }
 }
