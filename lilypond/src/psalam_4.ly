@@ -101,14 +101,14 @@ akordi = \chordmode {
   \set chordChanges = ##t
   s4
   f1 | c/e | d:m | b |
-  a1:m | d:m | g:m | c:m |
+  a1:m | d:m | g:m | c |
   \set chordChanges = ##f
-  c:m |
+  c |
   \set chordChanges = ##t
   
   d1:m | c | b | b |
   g1:m | f/a | c | c |
-  b1:m | c | d:m | d:m |
+  b1 | c | d:m | d:m |
   es1 | es | c | c |
   
 }
@@ -133,7 +133,9 @@ akordi = \chordmode {
       \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) B \italic \teeny { verse 1. } }
       \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { A \teeny \italic { chorus } } }
       \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) B \italic \teeny { verse 2. } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { A \teeny \italic { chorus } } }
-    }
+       \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \italic \teeny { modulation to G over D } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { A \teeny \italic { chorus x2 } } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \italic \teeny { ending Eb-F-G } }
+    }  
   }
 }

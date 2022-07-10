@@ -108,13 +108,13 @@ akordi = \chordmode {
   h1:m7 | e:m7 | g2:maj7 g:m6 | d1 |
   
   g1 | d/fis | e:7 | e2:m9 a4:7 as:7 |
-  g1 | d/fis | e4:m7 d/fis g2 | g1/a | g/a |
+  g1 | d/fis | e4:m7 d/fis g2 | a1:sus4 | a |
   
   d1 | c/d | g/d | d2. cis4:dim7 |
   h1:m7 | e:m7 | g2:maj7 g:m6 | d1 |
   
   g1 | d/fis | e:7 | e2:m9 a4:7 as:7 |
-  g1 | d/fis | e4:m7 d/fis g2 | g1/a | g/a |
+  g1 | d/fis | e4:m7 d/fis g2 | a1:sus4 | a |
 }
 
 \score {

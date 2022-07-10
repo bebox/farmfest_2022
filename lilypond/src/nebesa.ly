@@ -50,7 +50,7 @@ note = \relative c' {
   e1 |
   r4 e8 h e4 fis8 e ~ |
   e1 |
-  r4 gis8 fis gis4 fis8 fis( ~ |
+  r4 gis8 fis gis4 fis8 \slurDown fis( ~ |
   fis8 e ~ e2) r8 gis8 |
   gis8 fis fis e e4 dis |
   dis4 e8 cis ~ cis2 |
@@ -79,8 +79,9 @@ akordi = \chordmode {
 
 \score {
   <<
-    \new ChordNames {  \jazzChords \akordi }
-    \new Staff { \note }
+    \new ChordNames { \transpose e a { \jazzChords \akordi }}
+     \transpose e a { \note }
+    %\new Staff { \note }
     \addlyrics { \tekst \ref }
   >>
   \layout {}

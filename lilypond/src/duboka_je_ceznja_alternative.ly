@@ -145,7 +145,7 @@ akordi = \chordmode {
       \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) D \italic \teeny { break } }
       \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) B \italic \teeny { verse 2. } }
       \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { C \teeny \italic { chorus x2 } } }
-      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { C \teeny \italic { [41 - 44] x2, F major } } }
+      \line { \pad-to-box #'(0 . 0) #'(-0.34 . 1.85) \bold { C \teeny \italic { [41 - 44] x2, F-dur } } }
     }
   }
 }

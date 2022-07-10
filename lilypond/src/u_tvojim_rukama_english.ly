@@ -69,13 +69,13 @@ akordi = \chordmode {
   a2. a2./cis |
   d2. d4. a4./cis |
   
-  a2. h2.:sus4 |
+  a2. a2./h |
   a2./cis d2.:maj7 |
-  a2. h2.:sus4 |
+  a2. a2./h |
   a2./cis d2.:maj7 |
-  a2. h2.:sus4 |
+  a2. a2./h |
   a2./cis d2.:maj7 |  
-  a2. h2.:sus4 |
+  a2. a2./h |
   a2./cis d2.:maj7 |
   
   a2. a2./cis |
