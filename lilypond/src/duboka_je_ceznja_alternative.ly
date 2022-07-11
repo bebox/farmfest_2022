@@ -14,7 +14,7 @@
   \aFourR
   %annotate-spacing = ##t
   page-breaking = #ly:one-page-breaking
-  last-bottom-spacing.minimum-distance = #8
+  last-bottom-spacing.minimum-distance = #9.27
 }
 
 note = \relative c'' {
@@ -35,11 +35,11 @@ note = \relative c'' {
   \markMoj
   r2 a4 a8 a ~ |
   a4 f g a |
-  r2 b4 a |
+  r2 b4 a | \noBreak
   a2 g |
   r2 g4 g8 g ~ |
   g4 e f g |
-  g8 a4 a8 ~ a2 ~ |
+  g8 a4 a8 ~ a2 ~ | \break
   a1 |
   r2 a4 a |
   g2 f |
@@ -60,7 +60,7 @@ note = \relative c'' {
   c'2 c2 |
   c2.( f,4) |
   f1 |
-  r1 |
+  r1 | \break
   c'2 c4 c |
   c2.( f,4) |
   f2 r2 |
@@ -97,7 +97,7 @@ O, iz -- lij svoj Duh na nas __ ti! __
 
 tekstDva = \lyricmode {
 \set stanza = #"2. "
-Go -- spo -- de, __ tvoj Duh se pri -- bli -- ža -- va, sna -- žan val __ će nas pre -- pla -- vi -- ti __
+Go -- spo -- de, tvoj Duh se pri -- bli -- ža -- va, sna -- žan val __ će nas pre -- pla -- vi -- ti __
 pra -- ve -- dno -- šću, o -- pro -- šte -- njem. Mo -- li -- mo __ za pro -- bu -- đe -- nje! __
 }
 
@@ -110,11 +110,11 @@ akordi = \chordmode {
   d1:m | c | f | b2 a:m |
   b1 | b | g:m | g:m |
   d1:m | d:m | c | c |
-  f1 | f | b1 | b2 g:m |
+  f1 | f | b1 | b2 g:m | \break
   
   d1:m | c2/e f | b1 | b | 
   f1 | f | c1 | c2 f4 c/e |
-  d1:m | c2/e f | b1 | b |
+  d1:m | c2/e f | b1 | b | 
   g1:m | c | b4 \parenthesize es2. |
   s1 |
   g1:m | c | es4 \parenthesize b2. |
